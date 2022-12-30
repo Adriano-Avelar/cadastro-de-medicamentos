@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Medicamentos</title>
+</head>
+<body>
+    <section id="top-section">
+        <h1><a href="#">Home</a></h1>
+        <h1><a href="#">Cadastro <br>de Medicamentos</a></h1>
+        <h1><a href="#">Cadastro <br>de Vacinas</a></h1>
+        <h1><a href="#">Cadastro <br>de Cosméticos</a></h1>
+    </section>
+    <header>
+        <img class="logo" src="logo.png" alt="logo Medicamento">
+        <div>
+            <h1 class="title">Cadastro de Medicamentos</h1>
+            <h2 class="subtitle">Farma Avelar</h2>
+        </div>
+    </header>
+
+    <section id="sec-form">
+        <div id="form">
+            <form onsubmit="addMed()">
+                <label for="medName">Nome do medicamento</label>
+                <input type="text" required id="fname" autocomplete="off" name="medName" placeholder="Benegrip">
+                <label for="medQtd">Quantidade Disponível</label>
+                <input type="text" required id="fqtd" autocomplete="off" name="medQtd" placeholder="100">
+                <label for="medClass">Classe de Medicamento</label>
+                <input type="text" required id="fclass" autocomplete="off" name="medClass" placeholder="Antigripais">
+                <button class="submit-button" type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <div>
+            <table id="dataTable">
+                    <tr>
+                        <th>ID</th>
+                        <th>Medicamento</th>
+                        <th>Quantidade</th>
+                        <th>Classe de Medicamento</th>
+                        <th>Remover</th>
+                    </tr>` 
+                    <tr>
+                    <tr>
+                        <td>0</td>
+                        <td>BUSCOPAN</td>
+                        <td>10</td>
+                        <td>ANTIBIOTICO</td>  
+                        <td>x</td>                                                 
+                   </tr>            
+            </table>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <h3>Adriano Avelar<br>
+    91 98172-8435</h3>
+</body>
+
+</html>
